@@ -4,21 +4,22 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Pilotkonditionen – Azubi-Apps | 🖤 RE:BELLE™ Media</title>
+  <meta name="description" content="Pilotkonditionen für die Azubi-Apps (Koch, ReFa, HoFa): vergünstigt, klarer Ablauf, reale Nutzung, messbare Ziele, Kontakt." />
+  <meta name="theme-color" content="#C7443D"/>
 
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&family=Allura&display=swap" rel="stylesheet">
 
-  <!-- IMPORTANT: file name must match your CSS file -->
-  <link rel="stylesheet" href="/pilot.css" />
+  <link rel="stylesheet" href="/styles.css" />
 </head>
 
 <body>
   <main class="page" role="main" aria-label="Pilotkonditionen Onepager">
 
-    <!-- TOP -->
-    <header class="top">
+    <!-- TOP BAR -->
+    <header class="top" aria-label="Kopfbereich">
       <div class="brand">
         <div class="brand__mark" aria-hidden="true">🖤</div>
         <div class="brand__txt">
@@ -43,17 +44,19 @@
       </div>
     </header>
 
-    <!-- BOARD -->
+    <!-- MOODBOARD -->
     <section class="board" aria-label="Pilot Moodboard">
 
+      <!-- swatches -->
       <aside class="swatches" aria-label="Farbpalette">
         <div class="sw sw--bg" title="#C7443D"></div>
-        <div class="sw sw--off" title="#F4F3F1"></div>
-        <div class="sw sw--stone" title="#D7D5CC"></div>
-        <div class="sw sw--sand" title="#C4AA89"></div>
         <div class="sw sw--teal" title="#1B4950"></div>
+        <div class="sw sw--sand" title="#C4AA89"></div>
+        <div class="sw sw--stone" title="#D7D5CC"></div>
+        <div class="sw sw--off" title="#F4F3F1"></div>
       </aside>
 
+      <!-- grid -->
       <div class="grid">
 
         <!-- HERO -->
@@ -61,34 +64,57 @@
           <div class="cap">Worum es geht</div>
           <div class="title">Pilotpreis statt Marktpreis – dafür echte Nutzung & echte Daten</div>
           <p class="text">
-            Du bekommst die App(s) jetzt vergünstigt und nutzt sie im Ausbildungsalltag.
-            Wir holen kurzes, klares Feedback ab und rollen Updates aus.
-            Ergebnis: ein Produkt, das im echten Betrieb funktioniert – nicht nur auf Folien.
+            Du nutzt die App(s) real im Ausbildungsalltag. Wir sammeln kurzes Feedback, rollen Updates aus
+            und härten das Produkt dort, wo es später bestehen muss: im Betrieb.
           </p>
-          <div class="chips" aria-label="Chips">
+
+          <div class="chips" aria-label="Key Points">
             <span class="chip">Einmalzahlung</span>
             <span class="chip">Offline</span>
             <span class="chip">Keine Cloud-Pflicht</span>
-            <span class="chip">PDF Export</span>
+            <span class="chip">PDF-Export</span>
+            <span class="chip">IHK-konform</span>
+            <span class="chip">DSGVO-sauber</span>
           </div>
+        </article>
+
+        <!-- PILOT DEAL (numbers + what/when/how) -->
+        <article class="card">
+          <div class="cap">Pilot-Deal (glasklar)</div>
+          <div class="title">Du bekommst</div>
+          <ul class="list">
+            <li><strong>vergünstigte Konditionen</strong> (nur Pilot-Slots)</li>
+            <li><strong>vollen Funktionsumfang</strong> – keine Light-Version</li>
+            <li><strong>Updates inklusive</strong> während der Pilotphase</li>
+            <li><strong>priorisierte Fixes</strong> bei echten Blockern</li>
+          </ul>
+
+          <div class="divider"></div>
+
+          <div class="title">Wir bekommen</div>
+          <ul class="list">
+            <li>reale Nutzung durch <strong>4–8 Azubis</strong> (optional Ausbilder)</li>
+            <li><strong>10 Minuten pro Woche</strong> Feedback</li>
+            <li>pro Woche: <strong>läuft</strong> / <strong>hakt</strong> / <strong>wünsch ich mir</strong></li>
+          </ul>
         </article>
 
         <!-- PRICING -->
         <article class="card card--wide">
           <div class="cap">Pilotpreise (einmalig)</div>
-          <div class="title">Klarer Einstieg – ohne Abo</div>
+          <div class="title">Ohne Abo. Ohne Nachklauseln. Klar pro Betrieb.</div>
 
-          <div class="pricing" role="list">
+          <div class="pricing" role="list" aria-label="Pilotpreise">
             <div class="price" role="listitem">
               <div class="price__head">
                 <div class="price__t">Pilot – Single App</div>
                 <div class="price__p">79 €</div>
               </div>
-              <div class="price__s">1 Beruf · 1 Betrieb</div>
+              <div class="price__s">1 Beruf (Koch oder ReFa oder HoFa) · 1 Betrieb</div>
               <ul class="list list--tight">
-                <li>voller Funktionsumfang</li>
                 <li>6 Wochen Pilotphase</li>
                 <li>Updates inklusive</li>
+                <li>PDF-Export im Alltag</li>
               </ul>
             </div>
 
@@ -99,7 +125,7 @@
               </div>
               <div class="price__s">2 Berufe · 1 Betrieb</div>
               <ul class="list list--tight">
-                <li>ideal für Mischbetriebe</li>
+                <li>für Mischbetriebe</li>
                 <li>Priorität bei Bugfixes</li>
                 <li>gemeinsamer Pilot-Check</li>
               </ul>
@@ -120,16 +146,16 @@
           </div>
 
           <div class="note">
-            Pilotpreis gilt nur für die Pilot-Slots. Danach bleibt deine App aktiv – ohne laufende Gebühren.
+            Nach dem Pilot bleibt die App aktiv (keine laufenden Gebühren). Pilotpreis gilt nur für die Pilot-Slots.
           </div>
         </article>
 
         <!-- TIMELINE -->
         <article class="card">
           <div class="cap">Ablauf</div>
-          <div class="title">6 Wochen – klar getaktet</div>
-          <ol class="steps">
-            <li><span>W0</span><strong>Kickoff</strong> (5–15 Min) · Setup · Apps wählen</li>
+          <div class="title">6 Wochen, sauber getaktet</div>
+          <ol class="steps" aria-label="Pilot-Timeline">
+            <li><span>W0</span><strong>Kickoff</strong> (5–15 Min) · Apps wählen · Setup-Check</li>
             <li><span>W1–2</span><strong>Berichtsheft</strong> + Kalender im Alltag</li>
             <li><span>W3–4</span><strong>Prüfung</strong> (GAP1/GAP2) · Fragen schärfen</li>
             <li><span>W5</span><strong>PDF-Export</strong> testen (Druck/Weitergabe)</li>
@@ -137,24 +163,12 @@
           </ol>
         </article>
 
-        <!-- COMMITMENT -->
-        <article class="card">
-          <div class="cap">Pilot-Commitment</div>
-          <div class="title">Was wir von dir brauchen</div>
-          <ul class="list">
-            <li><strong>4–8 Nutzer</strong> (Azubis, optional Ausbilder)</li>
-            <li><strong>10 Min/Woche</strong> Feedback (Call/Voice/Text)</li>
-            <li>jede Woche: <strong>läuft</strong> / <strong>hakt</strong> / <strong>wünsch ich mir</strong></li>
-          </ul>
-          <div class="note">Du lieferst Realität. Wir liefern Updates.</div>
-        </article>
-
         <!-- METRICS -->
-        <article class="card card--wide">
+        <article class="card">
           <div class="cap">Erfolg (messbar)</div>
           <div class="title">Ziele nach 6 Wochen</div>
 
-          <div class="metrics" role="list">
+          <div class="metrics" role="list" aria-label="Metriken">
             <div class="metric" role="listitem">
               <div class="metric__n">90%</div>
               <div class="metric__t">Berichtsheft-Aktiv</div>
@@ -163,32 +177,33 @@
             <div class="metric" role="listitem">
               <div class="metric__n">3×</div>
               <div class="metric__t">Prüfungsläufe</div>
-              <div class="metric__s">pro Nutzer mind. 3 Simulationen</div>
+              <div class="metric__s">pro Nutzer 3 Simulationen</div>
             </div>
             <div class="metric" role="listitem">
               <div class="metric__n">&lt; 24h</div>
-              <div class="metric__t">Bugfix-Reaktion</div>
-              <div class="metric__s">kritisch → schnell gefixt</div>
+              <div class="metric__t">Blocker-Reaktion</div>
+              <div class="metric__s">kritisch → fixen</div>
             </div>
             <div class="metric" role="listitem">
               <div class="metric__n">1/W</div>
               <div class="metric__t">PDF-Proof</div>
-              <div class="metric__s">mind. ein Export pro Woche</div>
+              <div class="metric__s">mind. ein Export/Woche</div>
             </div>
           </div>
         </article>
 
-        <!-- CONTACT -->
-        <article class="card card--wide" id="kontakt">
+        <!-- CONTACT (with Allura signature) -->
+        <article class="card card--contact card--wide" id="kontakt">
           <div class="cap">Kontakt</div>
-          <div class="title">Pilot-Slot sichern</div>
+          <div class="title">Nächster Schritt</div>
+
           <p class="text text--tight">
-            Demo + <a href="#" class="pilot-link">Pilotkonditionen</a> in 15 Minuten klären.
+            Demo + <a href="#" class="pilot-link" aria-label="Pilotkonditionen Link">Pilotkonditionen</a> in 15 Minuten klären.
           </p>
 
-          <div class="cta">
+          <div class="cta" aria-label="Kontakt Aktionen">
             <button class="btn" type="button" data-copy="rebelle.media.creator@gmail.com">E-Mail kopieren</button>
-            <a class="btn btn--ghost" href="mailto:rebelle.media.creator@gmail.com?subject=Pilot%20Azubi-Apps%20-%20Slot%20anfragen">Mail öffnen</a>
+            <a class="btn btn--ghost" href="mailto:rebelle.media.creator@gmail.com?subject=Pilot%20Azubi-Apps%20%E2%80%93%20Slot%20anfragen">Mail öffnen</a>
           </div>
 
           <div class="contact">
@@ -220,15 +235,15 @@
         <div class="footer__brand">🖤 RE:BELLE™ Media</div>
         <div class="footer__tag">The Art of Feeling. Amplified.</div>
       </div>
-      <div class="footer__right">
-        <a href="#" class="footer__pilot">Zur Hauptseite</a>
+      <nav class="footer__right" aria-label="Rechtliches">
         <a href="https://rebellemedia.de/impressum/" target="_self" rel="noopener">Impressum</a>
         <a href="https://rebellemedia.de/datenschutz/" target="_self" rel="noopener">Datenschutz</a>
-      </div>
+        <a href="https://rebellemedia.de/barrierefreiheit/" target="_self" rel="noopener">Barrierefreiheit</a>
+      </nav>
     </footer>
 
   </main>
 
-  <script src="pilot.js"></script>
+  <script src="/app.js"></script>
 </body>
 </html>
